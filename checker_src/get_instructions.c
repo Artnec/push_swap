@@ -63,7 +63,6 @@ static int		gnl(char *line)
 	int		bytes_read;
 
 	bytes_read = read(0, buf, 3);
-	// usleep(40);
 	if (bytes_read == 0)
 		return (0);
 	if (bytes_read < 3)
