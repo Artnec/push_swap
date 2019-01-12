@@ -5,31 +5,33 @@ number of integers (INT_MIN..INT_MAX) without any duplicates. b is empty.
 The goal is to sort in ascending order numbers into stack a.
 To do this you have the following operations at your disposal:
 ```
-**sa**  : swap a - swap the first 2 elements at the top of stack a.
+<pre>
+<b>sa</b>  : swap a - swap the first 2 elements at the top of stack a.
      Do nothing if there is only one or no elements).
 
-**sb**  : swap b - swap the first 2 elements at the top of stack b.
+<b>sb</b>  : swap b - swap the first 2 elements at the top of stack b.
      Do nothing if there is only one or no elements).
 
-**ss**  : sa and sb at the same time.
+<b>ss</b>  : sa and sb at the same time.
 
-**pa**  : push a - take the first element at the top of b and put it at the top of a.
+<b>pa</b>  : push a - take the first element at the top of b and put it at the top of a.
      Do nothing if b is empty.
 
-**pb**  : push b - take the first element at the top of a and put it at the top of b .
+<b>pb</b>  : push b - take the first element at the top of a and put it at the top of b .
      Do nothing if a is empty.
 
-**ra**  : rotate a - shift up all elements of stack a by 1. The first element becomes the last one.
+<b>ra</b>  : rotate a - shift up all elements of stack a by 1. The first element becomes the last one.
 
-**rb**  : rotate b - shift up all elements of stack b by 1. The first element becomes the last one.
+<b>rb</b>  : rotate b - shift up all elements of stack b by 1. The first element becomes the last one.
 
-**rr**  : ra and rb at the same time.
+<b>rr</b>  : ra and rb at the same time.
 
-**rra** : reverse rotate a - shift down all elements of stack a by 1. The last element becomes the first one.
+<b>rra/<b> : reverse rotate a - shift down all elements of stack a by 1. The last element becomes the first one.
 
-**rrb** : reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one.
+<b>rrb/<b> : reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one.
 
-**rrr** : rra and rrb at the same time
+<b>rrr/<b> : rra and rrb at the same time
+</pre>
 ```
 How to use:
 ```
