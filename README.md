@@ -4,35 +4,35 @@ The game is composed of 2 stacks named a and b. At the start a contains
 number of integers (INT_MIN..INT_MAX) without any duplicates. b is empty.
 The goal is to sort in ascending order numbers into stack a.
 To do this you have the following operations at your disposal:
-```
-<pre>
-<b>sa</b>  : swap a - swap the first 2 elements at the top of stack a.
+
+
+**sa**  : swap a - swap the first 2 elements at the top of stack a.
      Do nothing if there is only one or no elements).
 
-<b>sb</b>  : swap b - swap the first 2 elements at the top of stack b.
+**sb**  : swap b - swap the first 2 elements at the top of stack b.
      Do nothing if there is only one or no elements).
 
-<b>ss</b>  : sa and sb at the same time.
+**ss**  : sa and sb at the same time.
 
-<b>pa</b>  : push a - take the first element at the top of b and put it at the top of a.
+**pa**  : push a - take the first element at the top of b and put it at the top of a.
      Do nothing if b is empty.
 
-<b>pb</b>  : push b - take the first element at the top of a and put it at the top of b .
+**pb**  : push b - take the first element at the top of a and put it at the top of b .
      Do nothing if a is empty.
 
-<b>ra</b>  : rotate a - shift up all elements of stack a by 1. The first element becomes the last one.
+**ra**  : rotate a - shift up all elements of stack a by 1. The first element becomes the last one.
 
-<b>rb</b>  : rotate b - shift up all elements of stack b by 1. The first element becomes the last one.
+**rb**  : rotate b - shift up all elements of stack b by 1. The first element becomes the last one.
 
-<b>rr</b>  : ra and rb at the same time.
+**rr**  : ra and rb at the same time.
 
-<b>rra/<b> : reverse rotate a - shift down all elements of stack a by 1. The last element becomes the first one.
+**rra** : reverse rotate a - shift down all elements of stack a by 1. The last element becomes the first one.
 
-<b>rrb/<b> : reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one.
+**rrb** : reverse rotate b - shift down all elements of stack b by 1. The last element becomes the first one.
 
-<b>rrr/<b> : rra and rrb at the same time
-</pre>
-```
+**rrr** : rra and rrb at the same time
+
+
 How to use:
 ```
   ./push_swap 4 5 3 2 1 | ./checker 4 5 3 2 1
