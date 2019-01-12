@@ -1,8 +1,13 @@
 #PUSH_SWAP
+
 The game is composed of 2 stacks named a and b. At the start a contains
+
 number of integers (INT_MIN..INT_MAX) without any duplicates. b is empty.
+
 The goal is to sort in ascending order numbers into stack a.
+
 To do this you have the following operations at your disposal:
+
 
 sa : swap a - swap the first 2 elements at the top of stack a.
      Do nothing if there is only one or no elements).
@@ -14,8 +19,10 @@ ss : sa and sb at the same time.
 
 pa : push a - take the first element at the top of b and put it at the top of a.
      Do nothing if b is empty.
+
 pb : push b - take the first element at the top of a and put it at the top of b .
      Do nothing if a is empty.
+
 ra : rotate a - shift up all elements of stack a by 1. The first element becomes the last one.
 
 rb : rotate b - shift up all elements of stack b by 1. The first element becomes the last one.
